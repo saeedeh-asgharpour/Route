@@ -4,6 +4,16 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
+  {
+    path: 'collections',
+    loadChildren: () =>
+      import('./docs/docs.module').then(m => m.DocsModule)
+  },
+  {
+    path: 'elements',
+    loadChildren: () =>
+      import('./events/events.module').then(m => m.EventsModule)
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];

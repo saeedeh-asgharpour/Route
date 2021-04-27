@@ -1,6 +1,5 @@
-# Angular Routing Example
-In this project we will be working with routing in angular.
-
+# Angular Routing and lazyloading
+In this project we will be working with Routing and Lazy-loading feature in Angular.
 
 # Comps
 
